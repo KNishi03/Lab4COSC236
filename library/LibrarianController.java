@@ -33,8 +33,8 @@ public class LibrarianController {
 			return "Book is unavailable.";
 		}
 
-		book.setAvailable(false);
-		member.borrowBook(book);
+		book.isAvailable();
+		member.borrowBooks(book);
 		return "Book borrowed.";
 	}
 
@@ -54,8 +54,8 @@ public class LibrarianController {
 			return "This book was not borrowed by this member.";
 		}
 
-		book.setAvailable(true);
-		member.returnBook(book);
+		book.isAvailable();
+		member.returnBooks(book);
 		return "Book returned.";
 	}
 
@@ -67,4 +67,3 @@ public class LibrarianController {
 		return null;
 	}
 }
-

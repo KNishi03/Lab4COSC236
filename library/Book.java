@@ -1,5 +1,3 @@
-package lab4.library;
- 
 public class Book {
 
 	// GRASP Principle: Information Expert
@@ -22,7 +20,7 @@ public class Book {
 		return author;
 	}
 	public boolean isAvailable(){
-		return isAvailable;
+		return isAvailable();
 	}
 	public boolean borrowBook(){
 		if(isAvailable){
@@ -34,7 +32,7 @@ public class Book {
 		
 	}
 	public boolean returnBook(){
-		isAvailable=true;
+		return isAvailable=true;
 	}
 	
 }

@@ -16,11 +16,11 @@ public class Member {
 		this.name = name;
 	}
 
-	private void borrowBooks(Book newBook){
+	public void borrowBooks(Book newBook){
 		borrowedBooks.add(newBook);
 	}
 
-	private void returnBooks(Book returnedBook){
+	public void returnBooks(Book returnedBook){
 		borrowedBooks.remove(returnedBook);
 	}
 
