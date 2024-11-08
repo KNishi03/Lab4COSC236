@@ -12,7 +12,7 @@ public class LibrarianController {
 
 	private Library library;
 
-	public LibrarianController(Libaray library) {
+	public LibrarianController(Library library) {
 		this.library = library;
 	}
 
